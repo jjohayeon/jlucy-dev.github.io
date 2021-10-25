@@ -93,20 +93,26 @@
             </p>
           </div>
           <div class="sec4-bg"></div>
-          <!-- <div class="txt-box">
-            <p>02</p>
-            <h2>
-              데이터로 미리<br />
-              예측하는<br />
-              똑똑한 마케팅
-            </h2>
-            <p>
-              그 동안 진행했던 모든 마케팅 데이터로<br />
-              성과를 예측할 수 있어 똑똑한 마케팅이 가능합니다.
-            </p>
-          </div>
-          <div class="sec4-bg"></div>
-          <div class="txt-box">
+          
+          
+      </section>
+      <section id="section4-2" class="section">
+        <div class="txt-box">
+          <p>02</p>
+          <h2>
+            데이터로 미리<br />
+            예측하는<br />
+            똑똑한 마케팅
+          </h2>
+          <p>
+            그 동안 진행했던 모든 마케팅 데이터로<br />
+            성과를 예측할 수 있어 똑똑한 마케팅이 가능합니다.
+          </p>
+        </div>
+        <div class="sec4-bg"></div>
+      </section>
+      <section id="section4-3" class="section">
+        <div class="txt-box">
             <p>03</p>
             <h2>
               철저한 분석으로<br />
@@ -118,8 +124,15 @@
               각 전문 팀들이 다양한 방법으로 철저한 분석을 진행합니다.<br />
               * 분석까지 일주일 소요
             </p>
-          </div>
-          <div class="sec4-bg"></div> -->
+        </div>
+        <div class="sec4-bg"></div>
+      </section>
+      <section id="section5-1" class="section">
+        <h2 class="h2">
+          그럼<br>
+          이제부터 마케팅은<br>
+          어떻게 하나요?
+        </h2>
       </section>
       <section id="section5" class="section">
           <div class="part-adv">
@@ -148,9 +161,36 @@
           <p>제이루시 제안으로 광고주가<br /> 원하는 마케팅이 협의되면 진행</p>
         </div>
       </section>
-      <section id="section7" class="section"></section>
-      <section id="section8" class="section"></section>
-      <footer id="footer" class="footer"></footer>
+      <section id="section6-2" class="section">
+        <div class="partnerShip">
+          <div class="partnerShip-bg"></div>
+          <h3>광고주와 마케팅 광고 체결</h3>
+          <p>제이루시 제안으로 광고주가<br /> 원하는 마케팅이 협의되면 진행</p>
+        </div>
+      </section>
+      <section id="section6-3" class="section">
+        <div class="partnerShip">
+          <div class="partnerShip-bg"></div>
+          <h3>광고주와 마케팅 광고 체결</h3>
+          <p>제이루시 제안으로 광고주가<br /> 원하는 마케팅이 협의되면 진행</p>
+        </div>
+      </section>
+      <footer id="footer" class="footer">
+        <ul>
+          <li><a href="#">회사소개</a></li>
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+        </ul>
+        <div class="txt-box">
+          <p><a href="#">로고</a></p>
+          <p>상호명 및 서비스 제공 : 제이루시</p>
+          <p>대표 :</p>
+          <p>주소 : 서울특별시 강남구 논현동 봉은사로 37길 한송빌딩 3층</p>
+          <p></p>
+        </div>
+      </footer>
       <div class="navigation">
         <ul>
           <li class="active"><a href="#section1" data-number="1"></a></li>
@@ -196,7 +236,7 @@
       $(window).on("wheel", function (e) {
         if (movingHtml.is(":animated")) return;
         if (e.originalEvent.deltaY > 0) {
-          if (page == 8) return;
+          if (page == 12) return;
           page++;
         } else if (e.originalEvent.deltaY < 0) {
           if (page == 1) return;
@@ -207,6 +247,16 @@
         }
         if (page == 4) {
           page4();
+        }
+        if (page == 5) {
+          page5();
+        }
+        if (page == 6) {
+          page6();
+        }
+
+        if (page == 7) {
+          page7();
         }
         if (page == 1) {
           headerChar.classList.remove("char");
