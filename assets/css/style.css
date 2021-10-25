@@ -108,11 +108,13 @@ span {
 
 #section1 .txt-box p {
     padding: 10px;
+    opacity: 0;
     font-family: 'GmarketSansBold';
 }
 
 #section1 .txt-box .link-box {
     padding-top: 50px;
+    opacity: 0;
 }
 
 #section1 .txt-box .link-box a {
@@ -255,8 +257,88 @@ span {
     opacity: 0;
 }
 
+#section4-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section4-2 .txt-box {
+    width: 35vw;
+    padding-right: 5vw;
+    opacity: 0;
+}
+#section4-2 .txt-box h2 {
+    font-size: 3vw;
+    color: rgb(88, 88, 255);;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #000;
+    font-family: 'GmarketSansBold';
+}
+#section4-2 .txt-box p {
+    font-size: 1.2vw;
+    padding-top: 20px;
+}
+
+#section4-2 .sec4-bg {
+    width: 30vw;
+    height: 30vh;
+    background: url("https://kream.co.kr/_nuxt/img/bg_info03.cd0ebe8.png");
+    background-size: contain;
+    opacity: 0;
+}
+
+#section4-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section4-3 .txt-box {
+    width: 35vw;
+    padding-right: 5vw;
+    opacity: 0;
+}
+#section4-3 .txt-box h2 {
+    font-size: 3vw;
+    color: rgb(88, 88, 255);;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #000;
+    font-family: 'GmarketSansBold';
+}
+#section4-3 .txt-box p {
+    font-size: 1.2vw;
+    padding-top: 20px;
+}
+
+#section4-3 .sec4-bg {
+    width: 30vw;
+    height: 30vh;
+    background: url("https://kream.co.kr/_nuxt/img/bg_info03.cd0ebe8.png");
+    background-size: contain;
+    opacity: 0;
+}
+
 
 /* section5 */
+
+
+#section5-1 {
+    background-color: rgba(255, 255, 255, 0.5);
+    position: relative;
+}
+
+#section5-1 h2 {
+    color: rgb(88, 88, 255);
+    font-size: 4vw;
+    position: absolute;
+    left: 50%;
+    top: calc(50% - 100px);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    font-family: 'GmarketSansBold';
+}
 
 #section5 {
     display: flex;
@@ -345,7 +427,7 @@ span {
 
 /* section6 */
 
-#section6 {
+#section6, #section6-2, #section6-3 {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -372,6 +454,31 @@ span {
     text-align: center;
     font-size: 1.5vw;
 }
+
+/* footer */
+
+#footer {
+    width: 100vw;
+    height: 30vh;
+    background: #ccc;
+}
+
+#footer ul {
+    padding: 2% 3%;
+    border-top: 1px solid #000;
+}
+
+#footer ul li {
+    display: inline-block;
+    padding: 0 5%;
+}
+
+#footer .txt-box {
+    padding: 2% 3%;
+    border-top: 1px solid #000;
+}
+
+
 
 
 /* navigation */
