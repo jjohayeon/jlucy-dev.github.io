@@ -272,15 +272,15 @@
         var positionTop = (page - 1) * $(window).height();
         movingHtml.animate({ scrollTop: positionTop });
 
-        function updateNavigation() {
-          section.toArray().forEach((ele) => {
-            var ele = document.querySelector(ele);
-            let activeSection =
-              $(`.navigation a[href="#${ele.attr("id")}"]`).data("number") - 1;
-            const isActive = ele.offset().top;
-            navItem.eq(activeSection).removeClass("active").addClass(isActive);
-          });
-        }
+        // function updateNavigation() {
+        //   section.toArray().forEach((ele) => {
+        //     var ele = document.querySelector(ele);
+        //     let activeSection =
+        //       $(`.navigation a[href="#${ele.attr("id")}"]`).data("number") - 1;
+        //     const isActive = ele.offset().top;
+        //     navItem.eq(activeSection).removeClass("active").addClass(isActive);
+        //   });
+        // }
 
         const smoothScroll = (target) =>
           $("body, html").animate({ scrollTop: target.offset().top }, 500);
