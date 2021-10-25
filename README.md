@@ -1,2 +1,0 @@
-# jlucy
-first jlucy dev
