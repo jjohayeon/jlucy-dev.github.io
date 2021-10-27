@@ -153,21 +153,14 @@ span {
   background: #555;
 }
 
-.sec1-bg1 {
-  /* background: url("https://kream.co.kr/_nuxt/img/bg_phone01.4ef915c.png"); */
+#section1 .sec1-bg {
+  width: 35vw;
+  height: 60vh;
+  transform: translateX(100px);
+  background-image: url("../img/section1-img.png");
+  background-repeat: no-repeat;
   background-size: contain;
-  width: 40vw;
-  height: 25vw;
-  position: absolute;
-}
-.sec1-bg2 {
-  /* background: url("https://kream.co.kr/_nuxt/img/bg_phone02.f8341a1.png"); */
-  background-size: contain;
-  width: 27vw;
-  height: 20vw;
-  position: relative;
-  bottom: -15%;
-  right: 0;
+  opacity: 0;
 }
 
 /* section2 */
@@ -224,7 +217,10 @@ span {
 /* section3 */
 
 #section3 {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-image: url("../img/section3-bg.png");
+  background-origin: border-box;
+  background-repeat: no-repeat round;
+  background-size: 101vw;
   position: relative;
 }
 
@@ -261,6 +257,7 @@ span {
 #section4 .txt-box h2 {
   font-size: 3vw;
   color: rgb(88, 88, 255);
+  padding-top: 30px;
   padding-bottom: 25px;
   border-bottom: 2px solid #000;
   font-family: "GmarketSansBold";
@@ -273,8 +270,9 @@ span {
 
 #section4 .sec4-bg {
   width: 30vw;
-  height: 30vh;
-  background: url("https://kream.co.kr/_nuxt/img/bg_info03.cd0ebe8.png");
+  height: 50vh;
+  background: url("../img/section4-img.png");
+  background-repeat: no-repeat;
   background-size: contain;
   opacity: 0;
 }
@@ -293,6 +291,7 @@ span {
 #section5 .txt-box h2 {
   font-size: 3vw;
   color: rgb(88, 88, 255);
+  padding-top: 30px;
   padding-bottom: 25px;
   border-bottom: 2px solid #000;
   line-height: 1.2;
@@ -303,11 +302,13 @@ span {
   padding-top: 20px;
 }
 
-#section5 .sec4-bg {
+#section5 .sec5-bg {
   width: 30vw;
-  height: 30vh;
-  background: url("https://kream.co.kr/_nuxt/img/bg_info03.cd0ebe8.png");
+  height: 50vh;
+  background: url("../img/section5-img.png");
+  background-repeat: no-repeat;
   background-size: contain;
+  margin-right: 0;
   opacity: 0;
 }
 
@@ -325,6 +326,7 @@ span {
 #section6 .txt-box h2 {
   font-size: 3vw;
   color: rgb(88, 88, 255);
+  padding-top: 30px;
   padding-bottom: 25px;
   border-bottom: 2px solid #000;
   line-height: 1.2;
@@ -335,11 +337,13 @@ span {
   padding-top: 20px;
 }
 
-#section6 .sec4-bg {
+#section6 .sec6-bg {
   width: 30vw;
-  height: 30vh;
-  background: url("https://kream.co.kr/_nuxt/img/bg_info03.cd0ebe8.png");
+  height: 50vh;
+  background: url("../img/section6-img.png");
+  background-repeat: no-repeat;
   background-size: contain;
+  margin-right: 0;
   opacity: 0;
 }
 
@@ -419,10 +423,20 @@ span {
 .adv-img,
 .jlucy-img {
   width: 25vw;
-  height: 40vh;
-  transform: translateX(50%) translateY(100px);
-  background: #ddd;
+  height: 25vw;
+  transform: translateY(100px);
   opacity: 0;
+  margin-top: 10%;
+}
+
+.adv-img2,
+.jlucy-img2 {
+  width: 20vw;
+  height: 25vw;
+  transform: translateY(100px);
+  opacity: 0;
+  margin-top: 3%;
+  margin-left: 3vw;
 }
 
 #section9 h3,
@@ -510,12 +524,35 @@ span {
   width: 50vw;
   margin: 0 auto;
 }
-.partnerShip-bg {
-  background: url("https://kream.co.kr/_nuxt/img/bg_info06.88dd177.png");
+.partnerShip1-bg {
+  background: url("../img/adv-02.png");
   background-size: contain;
-  width: 20vw;
-  height: 20vw;
-  margin: 0 auto;
+  background-repeat: no-repeat;
+  width: 15vw;
+  height: 20vh;
+  margin: 50px auto;
+  padding: 50px;
+  opacity: 0;
+  transform: translateY(100px);
+}
+.partnerShip2-bg {
+  background: url("../img/adv-03.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 15vw;
+  height: 20vh;
+  margin: 50px auto;
+  padding: 50px;
+  opacity: 0;
+  transform: translateY(100px);
+}
+.partnerShip3-bg {
+  background: url("../img/adv-04.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 15vw;
+  height: 20vh;
+  margin: 50px auto;
   padding: 50px;
   opacity: 0;
   transform: translateY(100px);
@@ -546,6 +583,7 @@ span {
 }
 
 .time {
+    font-family: 'noto-sans', sans-serif;
     color: #ccc;
 }
 
@@ -587,7 +625,7 @@ span {
   position: relative;
   width: 20px;
   height: 20px;
-  margin: 15px 0;
+  margin: 2px 2px;
 }
 .navigation li a {
   background-color: white;
@@ -597,6 +635,7 @@ span {
   display: block;
   transition: 0.2s ease;
   border: 1px solid #000;
+  transform: scale(0.7);
 }
 
 .navigation li.active a {
@@ -605,8 +644,8 @@ span {
   border-radius: 15px;
 }
 .navigation li.active {
-  padding-top: 7px;
-  padding-bottom: 42px;
+  padding-top: 6px;
+  padding-bottom: 40px;
 }
 .navigation li.active a {
   background-color: rgba(88, 88, 255, 0.5);

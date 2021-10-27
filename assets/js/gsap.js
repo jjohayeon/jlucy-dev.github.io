@@ -2,11 +2,11 @@
 function page1() {
   let page1 = gsap.timeline();
   page1.to("#section1 .txt-box p", {
-      duration: 1,
+      duration: 1.2,
       y: 0,
       opacity: 1,
     })
-  // page1.to("#section1 .txt-box p:nth-child(1)", {
+  // page1.to("#section1 .txt-box p:nth-child(1), #section1 .txt-box p:nth-child(2)", {
   //   duration: .3,
   //   y: 0,
   //   opacity: 1,
@@ -16,7 +16,7 @@ function page1() {
   //   y: 0,
   //   opacity: 1,
   // });
-  // page1.to("#section1 .txt-box p:nth-child(3)", {
+  // page1.to(sec1_child, {
   //   duration: .3,
   //   y: 0,
   //   opacity: 1,
@@ -46,6 +46,11 @@ function page1() {
     y: 0,
     opacity: 1,
   });
+  page1.to("#section1 .sec1-bg", {
+    duration: 1,
+    x: 0,
+    opacity: 1,
+  });
 }
 page1();
 
@@ -66,7 +71,7 @@ function page4() {
     opacity: 1,
   });
   page4.to("#section4 .sec4-bg", {
-    duration: 1,
+    duration: .5,
     y: -50,
     opacity: 1,
   });
@@ -79,7 +84,7 @@ function page5() {
     y: -50,
     opacity: 1,
   });
-  page5.to("#section5 .sec4-bg", {
+  page5.to("#section5 .sec5-bg", {
     duration: 1,
     y: -50,
     opacity: 1,
@@ -93,7 +98,7 @@ function page6() {
     y: -50,
     opacity: 1,
   });
-  page6.to("#section6 .sec4-bg", {
+  page6.to("#section6 .sec6-bg", {
     duration: 1,
     y: -50,
     opacity: 1,
@@ -154,7 +159,7 @@ function page10() {
     opacity: 1,
     delay: 0.5
   });
-  page10.to("#section10 .partnerShip-bg", {
+  page10.to("#section10 .partnerShip1-bg", {
     duration: 1,
     y: 0,
     opacity: 1,
@@ -174,7 +179,7 @@ function page11() {
     opacity: 1,
     delay: 0.5
   });
-  page11.to("#section11 .partnerShip-bg", {
+  page11.to("#section11 .partnerShip2-bg", {
     duration: 1,
     y: 0,
     opacity: 1,
@@ -194,7 +199,7 @@ function page12() {
     opacity: 1,
     delay: 0.5
   });
-  page12.to("#section12 .partnerShip-bg", {
+  page12.to("#section12 .partnerShip3-bg", {
     duration: 1,
     y: 0,
     opacity: 1,
