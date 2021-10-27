@@ -14,10 +14,22 @@
     />
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    
   </head>
   <body>
     <main id="wrap">
-      <header id="header" class="header"></header>
+      <header id="header" class="header">
+        <div class="header-container">
+          <div class="jlucy-logo">JLUCY</div>
+          <div class="jlucy-menu">
+            <ul>
+              <li><a href="#">SERVICE</a></li>
+              <li><a href="#">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
+        
+      </header>
       <section id="section1" class="section">
         <div class="txt-box">
           <p>IMC</p>
@@ -32,8 +44,7 @@
             <a href="#" class="part2">상품 소개서</a>
           </div>
         </div>
-        <div class="sec1-bg1"></div>
-        <div class="sec1-bg2"></div>
+        <div class="sec1-bg"></div>
       </section>
       <section id="section2" class="section">
         <div class="txt-box">
@@ -96,7 +107,7 @@
               성과를 예측할 수 있어 똑똑한 마케팅이 가능합니다.
             </p>
           </div>
-          <div class="sec4-bg"></div>
+          <div class="sec5-bg"></div>
       </section>
       <section id="section6" class="section">
         <div class="txt-box">
@@ -112,7 +123,7 @@
             </p>
             <p class="time">* 분석까지 일주일 소요</p>
         </div>
-        <div class="sec4-bg"></div>
+        <div class="sec6-bg"></div>
       </section>
       <section id="section7" class="section">
         <h2 class="h2">
@@ -125,23 +136,23 @@
       <section id="section8" class="section">
         <div class="part-adv">
             <h3 class="user">광고주</h3>
-            <img src="assets/img/adv-img.jpg" class="adv-img"></img>
+            <img src="assets/img/adv-img.png" class="adv-img"></img>
           </div>
           <div class="part-sell">
             <h3 class="user">제이루시</h3>
-            <img src="assets/img/jlucy-img.jpg" class="jlucy-img"></img>
+            <img src="assets/img/jlucy-img.png" class="jlucy-img"></img>
           </div>
       </section>
       <section id="section9" class="section">
         <div class="part-adv">
             <h3 class="user">01</h3>
-            <img src="assets/img/adv-img.jpg" class="adv-img"></img>
+            <img src="assets/img/adv-img2.png" class="adv-img2"></img>
             <h4>광고주는<br>광고할 매체 선택</h4>
             <p>원하는 광고 매체를 선택</p>
           </div>
           <div class="part-sell">
             <h3 class="user">01</h3>
-            <img src="assets/img/jlucy-img.jpg" class="jlucy-img"></img>
+            <img src="assets/img/jlucy-img2.png" class="jlucy-img2"></img>
             <h4>제이루시는<br>광고할 매체 전달</h4>
             <p>성과를 기반으로한 마케팅 플랜 전달</p>
           </div>
@@ -149,7 +160,7 @@
       <section id="section10" class="section">
         <div class="partnerShip">
           <h4>02</h4>
-            <div class="partnerShip-bg"></div>
+            <div class="partnerShip1-bg"></div>
             <h3>광고주와 마케팅 광고 체결</h3>
             <p>제이루시 제안으로 광고주가<br /> 원하는 마케팅이 협의되면 진행</p>
           </div>
@@ -157,7 +168,7 @@
       <section id="section11" class="section">
         <div class="partnerShip">
             <h4>03</h4>
-            <div class="partnerShip-bg"></div>
+            <div class="partnerShip2-bg"></div>
             
             <h3>전략과 책임</h3>
             <p>수익창출을 위한 마케팅 전략부터<br />실행까지 원스톱 서비스</p>
@@ -166,13 +177,32 @@
       <section id="section12" class="section">
         <div class="partnerShip">
             <h4>04</h4>
-            <div class="partnerShip-bg"></div>
+            <div class="partnerShip3-bg"></div>
             
             <h3>전문 데이터랩 팀에서 분석 진행</h3>
             <p>광고주의 브랜드(상품)는 전문 데이터랩 분석 팀이<br />다양한 방법으로 철저하게 분석하여 성과 걱정 NO!</p>
             <p class="time">* 분석까지 일주일 소요</p>
           </div>
       </section>
+      <section id="section13" class="section">
+        <div class="contact-container">
+          <h3>CONTACT US</h3>
+          <p>JLUCY</p>
+        </div>
+        <form>
+          <input type="text" half placeholder="Your Name" autocomplete="no">
+          <input type="text" half placeholder="Phone Num" autocomplete="no">
+          <input type="text" placeholder="Message" autocomplete="no">
+          <input type="button" value="클릭하세요!" onclick="popmsg()">  
+        </form>
+        <div class="popup">
+          <div class="popup-container">
+            <div class="close" onclick="popmsg()">닫기</div>
+            팝업입니다.
+          </div>
+        </div>    
+      </section>
+      
       <div class="navigation">
         <li class="active"><a href="#section1"></a></li>
         <li><a href="#section2"></a></li>
@@ -190,21 +220,24 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="assets/js/gsap.js"></script>
   <script src="assets/js/CountUp.min.js"></script>
-
+  <script src="assets/js/func.js"></script>
   <script>
     window.onload = function(){
-    var movingHtml = $("html");
-    var page = 1;
-    var section = document.querySelectorAll("section");
-    var changeHdr = document.querySelector("#header");
-    var navItem = $(".navigation li");
+      var movingHtml = $("html");
+      var page = 1;
+      var section = document.querySelectorAll("section");
+      var changeHdr = document.querySelector("#header");
+      var navItem = $(".navigation li");
+      
 
-    // section2 데이터 카운트업 효과
-    const countUp1 = new CountUp("number1", 0, 152);
-    const countUp2 = new CountUp("number2", 0, 39);
-    const countUp3 = new CountUp("number3", 0, 121688315);
+      // section2 데이터 카운트업 효과
+      const countUp1 = new CountUp("number1", 0, 152);
+      const countUp2 = new CountUp("number2", 0, 39);
+      const countUp3 = new CountUp("number3", 0, 121688315);
 
-    function StartCount() {
+      
+
+        function StartCount() {
         countUp1.start();
         countUp2.start();
         countUp3.start();
@@ -230,7 +263,7 @@
       $(window).on("wheel", e => {
           if (movingHtml.is(":animated")) return;
           if (e.originalEvent.deltaY > 0) {
-          if (page == 12) return;
+          if (page == 13) return;
           page++;
         } else if (e.originalEvent.deltaY < 0) {
           if (page == 1) return;
@@ -280,6 +313,9 @@
 
         if (page == 12) {
           page12();
+        }
+        if (page == 13) {
+          page13();
         }
 
         // let i = 2;
