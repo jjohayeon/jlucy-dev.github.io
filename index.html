@@ -23,8 +23,8 @@
           <div class="jlucy-logo">JLUCY</div>
           <div class="jlucy-menu">
             <ul>
-              <li><a href="#">SERVICE</a></li>
-              <li><a href="#">CONTACT</a></li>
+              <li><a href="#section2">SERVICE</a></li>
+              <li><a href="#section13">CONTACT</a></li>
             </ul>
           </div>
         </div>
@@ -242,7 +242,10 @@
         countUp2.start();
         countUp3.start();
     }
-
+          var serviceActive = $("#header li:nth-child(1)");
+      serviceActive.on("click", function () {
+        StartCount();
+      });
       window.addEventListener("wheel", e => {
           e.preventDefault();
       }, { passive: false }
@@ -330,26 +333,33 @@
         //     }
         // }
 
+        var currentPage = page;
         var positionTop = (page - 1) * $(window).height();
         movingHtml.animate({ scrollTop: positionTop });
 
+        console.log(positionTop);
         const smoothScroll = (target) =>
           $("body, html").animate({ scrollTop: target.offset().top }, 1000);
 
           function Nav(page) {
-            console.log(this)
+            // console.log(this)
             navItem.removeClass("active");
             $(`.navigation li:nth-child(${page})`).addClass("active");
           }
           Nav(page);
+          console.log(page);
+          // page = page;
       });
      
-
+      
         navItem.on("click", function(){
+          
           navItem.removeClass("active");
           $(this).addClass("active");
-          page = page;
+          
+
         });
+        
     }
   </script>
 </html>

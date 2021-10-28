@@ -649,35 +649,42 @@ span {
     background-color: #ccc;
 }
 #section13 {
-  display: flex;
-    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: rgb(88, 88, 255);
     
 }
 #section13 .contact-container {
-    width: 100%;
-    height: 25vh;
-    display: flex;
+    flex: 1 0 0;
+    width: 40vw;
+    height: 100vh;
     flex-direction: column;
-    background-color: rgb(88, 88, 255);
 }
 
 #section13 .contact-container h3 {
-    text-align: center;
+    /* text-align: center; */
     font-size: 3vw;
     color: #fff;
     padding-top: 5%;
 }
 #section13 .contact-container p {
-    text-align: center;
+    /* text-align: center; */
 }
 
 #section13 form {
   padding: 10% 10px 0px 40px;
-  width: 70vw;
-  max-width: 100%;
+  width: 40vw;
+  max-width: 40%;
+  height: 60vh;
   border-radius: 20px;
   margin: 0 auto;
   transform: translateY(70vh);
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  background: #fff;
 }
 
 #focus {
@@ -703,7 +710,7 @@ input {
   color: #868283;
 }
 input[type=text] {
-  width: calc(100% - 30px);
+  width: calc(90% - 30px);
   margin-bottom: 30px;
   border: 2px solid #868283;
 }
@@ -734,11 +741,14 @@ input[type=button] {
   cursor: pointer;
 }
 input[type=submit]:hover {
-  outline-width: 0;
+  outline-width: 10;
 }
 input:focus {
   outline: 0;
+  border: 1px solid #ccc;
 }
+
+/* popup */
 #section13 .popup {
   display: none;
   position: inherit;
@@ -762,6 +772,7 @@ input:focus {
   background: #fff;
   border-radius: 20px;
   position: relative;
+  padding: 20px;
 }
 
 .popup-container .close {
@@ -774,4 +785,20 @@ input:focus {
   border-radius: 10px;
   background: rgb(181, 113, 250);
   text-align: center;
+}
+
+
+
+@media (max-width:768px) {
+    #section1 {
+        flex-direction: column;
+    }
+
+    #section1 .sec1-bg {
+        display: none;
+    }
+
+    .navigation {
+        display: none;
+    }
 }
