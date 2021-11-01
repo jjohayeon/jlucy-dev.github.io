@@ -20,11 +20,11 @@
     <main id="wrap">
       <header id="header" class="header">
         <div class="header-container">
-          <div class="jlucy-logo">JLUCY</div>
+          <div class="jlucy-logo"></div>
           <div class="jlucy-menu">
             <ul>
-              <li><a href="#section2">SERVICE</a></li>
-              <li><a href="#section13">CONTACT</a></li>
+              <li><a href="#section2">Service</a></li>
+              <li><a href="#section13">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -50,10 +50,10 @@
         <div class="txt-box">
             <h2>
               세상에 없던<br />
-              TOTAL MARKETING PROVIDER
+              Total Marketing Provider
             </h2>
             <div class="data-box">
-              <h3>* 전국 최대규모 광고대행사</h3>
+              <h3>전국 최대규모 광고대행사</h3>
               <p>
                 진행했던 레퍼런스 <span id="number1" class="sec2-data"></span>개
                 돌파! 현재 진행하고 있는 광고주
@@ -61,7 +61,7 @@
               </p>
             </div>
             <div class="data-box">
-              <h3>* 연 마케팅 수집 데이터량 업계 최고</h3>
+              <h3>연 마케팅 수집 데이터량 업계 최고</h3>
               <p>
                 2020년 연간 마케팅 수집 데이터량<span
                   id="number3"
@@ -190,15 +190,18 @@
           <p>JLUCY</p>
         </div>
         <form>
+          <h2></h2>
+          <p>견적 및 상담</p>
           <input type="text" half placeholder="Your Name" autocomplete="no">
           <input type="text" half placeholder="Phone Num" autocomplete="no">
           <input type="text" placeholder="Message" autocomplete="no">
-          <input type="button" value="클릭하세요!" onclick="popmsg()">  
+          <input type="button" value="문의하기!" onclick="popmsg()">  
         </form>
-        <div class="popup">
+        <div class="popup" onclick="popmsg()">
           <div class="popup-container">
-            <div class="close" onclick="popmsg()">닫기</div>
-            팝업입니다.
+            <div class="close" onclick="popmsg2(e)">닫기</div>
+            <h3>문의주셔서 감사합니다</h3>
+            <p>빠른 시일 내에 연락드리겠습니다</p>
           </div>
         </div>    
       </section>
@@ -211,8 +214,25 @@
         <li><a href="#section5"></a></li>
         <li><a href="#section6"></a></li>
         <li><a href="#section7"></a></li>
+        <li><a href="#section8"></a></li>
+        <li><a href="#section9"></a></li>
+        <li><a href="#section10"></a></li>
+        <li><a href="#section11"></a></li>
+        <li><a href="#section12"></a></li>
+        <li><a href="#section13"></a></li>
       </div>
-      <section id="footer" class="section"></section>
+      <section id="footer" class="section">
+        <div class="footer-container">
+          <div class="footer-logo"></div>
+          <div class="txt-box">
+            <p>제이루시 (JLUCY)</p>
+            <p>서울 강남구 봉은사로 37길 20 (논현동, 혜움빌딩) 3층</p>
+            <p>info@jlucy.co.kr</p>
+            <p class="copyright">Copyright© JLUCY, All Right Reserved.</p>
+          </div>
+          
+        </div>
+      </section>
     </main>
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
@@ -266,7 +286,7 @@
       $(window).on("wheel", e => {
           if (movingHtml.is(":animated")) return;
           if (e.originalEvent.deltaY > 0) {
-          if (page == 13) return;
+          if (page == 14) return;
           page++;
         } else if (e.originalEvent.deltaY < 0) {
           if (page == 1) return;
@@ -279,8 +299,6 @@
 
         if (page == 2) {
           StartCount();
-        }
-        if (page != 2) {
         }
 
         if (page == 3) {
@@ -337,25 +355,24 @@
         var positionTop = (page - 1) * $(window).height();
         movingHtml.animate({ scrollTop: positionTop });
 
-        console.log(positionTop);
         const smoothScroll = (target) =>
           $("body, html").animate({ scrollTop: target.offset().top }, 1000);
 
           function Nav(page) {
-            // console.log(this)
+            console.log("nav" + page)
             navItem.removeClass("active");
             $(`.navigation li:nth-child(${page})`).addClass("active");
           }
           Nav(page);
-          console.log(page);
-          // page = page;
       });
      
-      
-        navItem.on("click", function(){
+        let pages = 1;
+        navItem.on("click", function(pages){
           
           navItem.removeClass("active");
           $(this).addClass("active");
+          pages++;
+          console.log("click" + pages)
           
 
         });
