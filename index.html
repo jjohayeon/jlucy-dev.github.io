@@ -192,9 +192,24 @@
         <form>
           <h2></h2>
           <p>견적 및 상담</p>
-          <input type="text" half placeholder="Your Name" autocomplete="no">
-          <input type="text" half placeholder="Phone Num" autocomplete="no">
-          <input type="text" placeholder="Message" autocomplete="no">
+          <div class="form-container">
+            <div class="name-box">
+              <p>이름</p>
+              <input type="text" half placeholder="" autocomplete="no">
+            </div>
+            <div class="num-box">
+              <p>연락처</p>
+              <input type="text" half placeholder="" autocomplete="no"> 
+            </div>         </div>
+            <div class="email-box">
+              <p>이메일</p>
+              <input type="text" placeholder="" autocomplete="no">
+            </div>
+            <div class="msg-box">
+              <p>문의내용</p>
+              <input type="text" placeholder="" autocomplete="no">
+            </div>
+          
           <input type="button" value="문의하기!" onclick="popmsg()">  
         </form>
         <div class="popup" onclick="popmsg()">
@@ -223,7 +238,7 @@
       </div>
       <section id="footer" class="section">
         <div class="footer-container">
-          <div class="footer-logo"></div>
+          <div class="footer-logo" onclick="window.location.reload(true);"></div>
           <div class="txt-box">
             <p>제이루시 (JLUCY)</p>
             <p>서울 강남구 봉은사로 37길 20 (논현동, 혜움빌딩) 3층</p>
