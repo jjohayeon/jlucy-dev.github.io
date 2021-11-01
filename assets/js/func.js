@@ -4,7 +4,8 @@ function popmsg() {
     popup.toggleClass("active")
 };
 
-function popmsg2(e) {
-    e.stopPropagation()
+function popmsg2() {
+    // e.stopPropagation()
     popup.toggleClass("active")
+    window.location.reload(true);
 };
