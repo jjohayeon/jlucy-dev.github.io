@@ -140,12 +140,12 @@ span {
 }
 
 #section1 .txt-box .link-box a {
-    padding: 10px 30px;
+    padding: 10px 20px 10px 45px;
     border-radius: 15px;
     border: 2px solid rgb(136, 132, 132);
     color: #000;
     transition: 0.3s linear;
-    font-size: 1.3vw;
+    font-size: 1.2vw;
 }
 
 #section1 .txt-box p:nth-child(6) {
@@ -157,6 +157,25 @@ span {
     font-family: "GmarketSansLight";
     font-size: 1.3vw;
     margin-top: -10px;
+}
+.link-box .part1 {
+    position: relative;
+}
+.link-box .part2 {
+    position: relative;
+}
+
+.link-box .part1 img {
+    top: 30%;
+    left: 8%;
+    transform: translateY(-25%);
+    position: absolute;
+}
+.link-box .part2 img {
+    top: 30%;
+    left: 8%;
+    transform: translateY(-25%);
+    position: absolute;
 }
 
 #section1 .txt-box .link-box .part1:hover {
@@ -599,6 +618,12 @@ span {
 
 .time {
     font-family: "noto-sans", sans-serif;
+    color: #ccc;
+}
+
+.partnerShip .time {
+    font-family: "noto-sans", sans-serif;
+    padding-top: 30px;
     color: #ccc;
 }
 
