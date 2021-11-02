@@ -137,6 +137,7 @@ span {
 
 #section1 .txt-box .link-box {
     opacity: 0;
+    transition: 0.3s linear;
 }
 
 #section1 .txt-box .link-box a {
@@ -144,7 +145,6 @@ span {
     border-radius: 15px;
     border: 2px solid rgb(136, 132, 132);
     color: #000;
-    transition: 0.3s linear;
     font-size: 1.2vw;
 }
 
@@ -166,14 +166,16 @@ span {
 }
 
 .link-box .part1 img {
-    top: 30%;
+    top: 35%;
     left: 8%;
+    width: 15%;
     transform: translateY(-25%);
     position: absolute;
 }
 .link-box .part2 img {
-    top: 30%;
+    top: 35%;
     left: 8%;
+    width: 15%;
     transform: translateY(-25%);
     position: absolute;
 }
