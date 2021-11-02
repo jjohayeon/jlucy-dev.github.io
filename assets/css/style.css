@@ -933,6 +933,7 @@ input[type="text"]:hover {
     width: 100vw;
     height: 40vh;
     background: #161616;
+    position: relative;
 }
 
 #footer .footer-container {
@@ -964,6 +965,22 @@ input[type="text"]:hover {
     padding-top: 30px;
     color: #585858;
 }
+
+.top {
+    position: absolute;
+    top: 15%;
+    right: 5%;
+    width: 75px;
+    height: 75px;
+    border-radius: 9999px;
+    background: #fff;
+    z-index: 9999;
+    color: rgb(78, 93, 255);
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
 
 
 /* keyframes */
