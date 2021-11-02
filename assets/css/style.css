@@ -32,15 +32,7 @@ body {
 #wrap {
     position: relative;
 }
-.scroll {
-    display: inline-block;
-    position: absolute;
-    background: red;
-    left: 5%;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 9999;
-}
+
 
 h1,
 h2,
@@ -127,6 +119,7 @@ span {
     max-height: 100%;
     margin: 0 auto;
     width: 72vw;
+    position: relative;
 }
 
 #section1 .txt-box {
@@ -199,6 +192,39 @@ span {
     transform: translateX(100px);
     opacity: 0;
 }
+
+.scroll {
+    display: inline-block;
+    padding: 30px 15px;
+    border-radius: 9999px;
+    border: 2px solid #000;
+    position: relative;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+.scroll::before {
+    content: 'Scroll';
+    position: absolute;
+    top: -45%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none;
+}
+
+.scroll .dot {
+    border: 2px solid #000;
+    width: 2px;
+    height: 2px;
+    border-radius: 9999px;
+    background: #000;
+    transform: translateY(-20px);
+    animation: dotMoving 1.5s infinite linear
+}
+
 
 /* section2 */
 
@@ -938,6 +964,15 @@ input[type="text"]:hover {
     padding-top: 30px;
     color: #585858;
 }
+
+
+/* keyframes */
+
+@keyframes dotMoving {
+    1% {transform: translateY(-5px);}
+    100% {transform: translateY(-20px);}
+}
+
 
 @media (max-width: 768px) {
     main {

@@ -64,6 +64,9 @@
           </div>
         </div>
         <img src="assets/img/section1-img.png" class="sec1-bg"></img>
+        <a class="scroll" href="#section2">
+          <div class="dot"></div>
+        </a>
       </section>
       <section id="section2" class="section">
         <div class="txt-box">
@@ -303,8 +306,12 @@
         countUp2.start();
         countUp3.start();
     }
-          var serviceActive = $("#header li:nth-child(1)");
+      var serviceActive = $("#header li:nth-child(1)");
+      var scrollEvent = $("#section1 .scroll");
       serviceActive.on("click", function () {
+        StartCount();
+      });
+      scrollEvent.on("click", function(){
         StartCount();
       });
       window.addEventListener("wheel", e => {

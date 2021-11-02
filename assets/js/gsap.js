@@ -50,6 +50,12 @@ function page1() {
         x: 0,
         opacity: 1,
     });
+    page1.to("#section1 .scroll", {
+        duration: .7,
+        delay: 1,
+        x: 0,
+        opacity: 1,
+    });
 }
 page1();
 
