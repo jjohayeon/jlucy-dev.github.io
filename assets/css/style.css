@@ -248,7 +248,7 @@ span {
 }
 
 #section2 .txt-box .data-box {
-    padding-top: 30px;
+    padding-top: 70px;
 }
 
 .data-box h3 {
@@ -438,7 +438,7 @@ span {
     top: calc(50% - 100px);
     transform: translate(-50%, -50%);
     text-align: center;
-    opacity: 0;
+    opacity: 1;
     font-family: "GmarketSansBold";
 }
 
@@ -454,8 +454,7 @@ span {
     position: absolute;
     top: 15%;
     left: 50%;
-    opacity: 0;
-    transform: translateX(-50%) translateY(100px);
+    transform: translateX(-50%);
 }
 
 #section8 .part-adv {
@@ -807,8 +806,6 @@ form > p {
     font-weight: bold;
 }
 
-.form-container p {
-}
 .name-box, .num-box  {
     width: 100%;
     padding-top: 20px;
