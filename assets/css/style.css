@@ -964,18 +964,21 @@ input[type="text"]:hover {
 }
 
 .top {
-    position: absolute;
-    top: 15%;
+    position: fixed;
+    bottom: 10%;
     right: 5%;
-    width: 75px;
-    height: 75px;
+    width: 60px;
+    height: 60px;
     border-radius: 9999px;
     background: #fff;
     z-index: 9999;
     color: rgb(78, 93, 255);
-    border: none;
+    box-shadow: 5px 5px 5px rgba(187, 187, 187, 0.7);
+    border: 1px solid rgb(78, 93, 255);
     cursor: pointer;
     text-align: center;
+    opacity: 0;
+    font-family: "GmarketSansBold";
 }
 
 

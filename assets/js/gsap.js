@@ -62,6 +62,14 @@ page1();
 // var naviActive = $(".navigation li")
 
 
+function page2() {
+    let page2 = gsap.timeline();
+    page2.to(".top", {
+        duration: .7,
+        opacity: 1,
+    });
+}
+
 var contactActive = $("#header li:nth-child(2)");
 
 contactActive.on("click", function () {
