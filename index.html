@@ -416,6 +416,90 @@
           // }
           // Nav(page);
       });
+
+      $(window).on("touchmove", ()=>{
+        if (movingHtml.is(":animated")) return;
+          if (e.originalEvent.deltaY > 0) {
+          if (page == 14) return;
+          page++;
+        } else if (e.originalEvent.deltaY < 0) {
+          if (page == 1) return;
+          page--;
+        }
+
+        if ( page == 1 ) {
+            changeHdr.classList.remove("char")
+        } else changeHdr.classList.add("char");
+
+        if (page == 2) {
+          StartCount();
+          page2()
+        }
+
+        if (page == 3) {
+            page3();
+        }
+
+        if (page == 4) {
+          page4();
+        }
+        if (page == 5) {
+          page5();
+        }
+        if (page == 6) {
+          page6();
+        }
+
+        if (page == 7) {
+          page7();
+        }
+
+        if (page == 8) {
+          page8();
+        }
+        if (page == 9) {
+          page9();
+        }
+        if (page == 10) {
+          page10();
+        }
+        if (page == 11) {
+          page11();
+        }
+
+        if (page == 12) {
+          page12();
+        }
+        if (page == 13) {
+          page13();
+        }
+
+        // let i = 2;
+        // if (page == i) {
+        //     for(i = 2; i < 13; i++) {
+        //         `page${i}()`;
+        //     }
+        // }
+        // for(let i = 1; i < 13; i++) {
+        //     if (page == i) {
+        //         `page${i}()`;
+        //     }
+        // }
+
+        var currentPage = page;
+        var positionTop = (page - 1) * $(window).height();
+        movingHtml.animate({ scrollTop: positionTop });
+
+        const smoothScroll = (target) =>
+          $("body, html").animate({ scrollTop: target.offset().top }, 1000);
+
+          // function Nav(page) {
+          //   console.log("nav" + page)
+          //   navItem.removeClass("active");
+          //   $(`.navigation li:nth-child(${page})`).addClass("active");
+          // }
+          // Nav(page);
+      })
      
         // let pages = 1;
         // navItem.on("click", function(pages){
