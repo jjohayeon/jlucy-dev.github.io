@@ -93,7 +93,9 @@ span {
 
 .jlucy-menu li {
     padding: 0px 10px 0px;
-    font-size: 1.2vw;
+    font-size: 1vw;
+    font-family: "GmarketSansMedium";
+    color: #000;
 }
 
 .jlucy-menu li:nth-child(1) {
@@ -108,6 +110,8 @@ span {
 .section {
     height: 100vh;
     max-height: 100%;
+    width: 72vw;
+    margin: 0 auto;
 }
 
 /* section1 */
@@ -139,11 +143,11 @@ span {
 }
 
 #section1 .txt-box .link-box a {
-    padding: 10px 20px 10px 55px;
-    border-radius: 15px;
+    padding: 0.5vw 1vw 0.5vw 2.5vw;
+    border-radius: 1vw;
     border: 2px solid rgb(136, 132, 132);
     color: #000;
-    font-size: 1.2vw;
+    font-size: 1vw;
 }
 
 #section1 .txt-box p:nth-child(6) {
@@ -233,7 +237,10 @@ span {
     justify-content: center;
     flex-direction: column;
     background: rgb(88, 88, 255);
+    width: 100vw;
 }
+
+
 
 #section2 .txt-box {
     padding-left: 14vw;
@@ -297,6 +304,7 @@ span {
     background-repeat: no-repeat round;
     background-size: 101vw;
     position: relative;
+    width: 100vw;
 }
 
 #section3 h2 {
@@ -315,13 +323,12 @@ span {
 
 #section4 {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
 #section4 .txt-box {
     width: 35vw;
-    padding-right: 5vw;
     opacity: 0;
 }
 .txt-box strong {
@@ -354,13 +361,12 @@ span {
 
 #section5 {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
 #section5 .txt-box {
     width: 35vw;
-    padding-right: 5vw;
     opacity: 0;
 }
 #section5 .txt-box h2 {
@@ -379,23 +385,21 @@ span {
 
 #section5 .sec5-bg {
     width: 30vw;
-    height: 50vh;
+    height: 60vh;
     background: url("../img/section5-img.png");
     background-repeat: no-repeat;
     background-size: contain;
-    margin-right: 0;
     opacity: 0;
 }
 
 #section6 {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
 #section6 .txt-box {
     width: 35vw;
-    padding-right: 5vw;
     opacity: 0;
 }
 #section6 .txt-box h2 {
@@ -414,12 +418,18 @@ span {
 
 #section6 .sec6-bg {
     width: 30vw;
-    height: 50vh;
+    height: 60vh;
     background: url("../img/section6-img.png");
     background-repeat: no-repeat;
     background-size: contain;
     margin-right: 0;
     opacity: 0;
+}
+
+#section6 .txt-box .time {
+    font-family: "noto-sans", sans-serif;
+    color: #ccc;
+    font-size: 1vw;
 }
 
 /* section5 */
@@ -446,6 +456,7 @@ span {
 #section9 {
     display: flex;
     position: relative;
+    min-width: 100vw;
 }
 
 #section8 .user {
@@ -612,6 +623,7 @@ span {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    min-width: 100vw;
 }
 
 #section11 {
@@ -671,14 +683,11 @@ span {
     font-family: "GmarketSansMedium";
 }
 
-.time {
-    font-family: "noto-sans", sans-serif;
-    color: #ccc;
-}
 
 .partnerShip .time {
     font-family: "noto-sans", sans-serif;
     padding-top: 30px;
+    font-size: 1.1vw;
     color: #ccc;
 }
 
@@ -736,6 +745,7 @@ span {
     background-image: url("../img/section13-bg.png");
     background-repeat: no-repeat;
     background-size: 101%;
+    width: 100vw;
 }
 #section13 .contact-container {
     width: 100vw;

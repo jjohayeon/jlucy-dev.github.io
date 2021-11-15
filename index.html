@@ -289,6 +289,8 @@
   <script src="assets/js/func.js"></script>
   <script>
     window.onload = function(){
+      
+    if(window.innerWidth > 768){
       var movingHtml = $("html");
       var page = 1;
       var section = document.querySelectorAll("section");
@@ -450,6 +452,10 @@
         // );
       // }
       
+      }
+      else {
+      console.log(window.innerWidth);
+    }
     }
     
   </script>
