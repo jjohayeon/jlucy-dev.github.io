@@ -24,10 +24,15 @@
 }
 
 /* header */
-body {
-    overflow-x: hidden;
-    overflow-y: hidden;
+
+@media (min-width: 800px) {
+    body {
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    
 }
+
 
 #wrap {
     position: relative;
@@ -139,11 +144,12 @@ span {
 
 #section1 .txt-box .link-box {
     opacity: 0;
-    transition: 0.3s linear;
+    transition: 0.2s linear;
+    font-family: "GmarketSansMedium";
 }
 
 #section1 .txt-box .link-box a {
-    padding: 0.5vw 1vw 0.5vw 2.5vw;
+    padding: 0.5vw 1vw 0.3vw 2.5vw;
     border-radius: 1vw;
     border: 2px solid rgb(136, 132, 132);
     color: #000;
@@ -183,11 +189,11 @@ span {
 }
 
 #section1 .txt-box .link-box .part1:hover {
-    background: #ccc;
+    background: rgb(224, 224, 224);
 }
 
 #section1 .txt-box .link-box .part2:hover {
-    background: #555;
+    background: rgb(224, 224, 224);
 }
 
 #section1 .sec1-bg {
@@ -995,12 +1001,6 @@ input[type="text"]:hover {
 
 
 /* keyframes */
-
-@keyframes dotMoving {
-    1% {transform: translateY(-5px);}
-    100% {transform: translateY(-20px);}
-}
-
 
 @media (max-width: 768px) {
     main {
