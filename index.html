@@ -218,30 +218,30 @@
           </p>
           <img src="assets/img/contact-img.png" alt="">
         </div>
-        <form>
+        <form action="https://formspree.io/f/mdoyrvbd" method="POST">
           <h2>ESTIMATE</h2>
           <p>문의 및 상담</p>
           <div class="line"></div>
           <div class="form-container">
-            <div class="name-box">
+            <label class="name-box">
               <p>이름</p>
-              <input type="text" half placeholder="" autocomplete="no">
-            </div>
-            <div class="num-box">
+              <input name="name" type="text" half placeholder="" autocomplete="no">
+            </label>
+            <label class="num-box">
               <p>연락처</p>
-              <input type="text" half placeholder="" autocomplete="no"> 
-            </div>         </div>
-            <div class="email-box">
+              <input name="number" type="text" half placeholder="" autocomplete="no"> 
+            </label>         </div>
+            <label class="email-box">
               <p>이메일</p>
-              <input type="text" placeholder="" autocomplete="no">
-            </div>
-            <div class="msg-box">
+              <input name="email" type="text" placeholder="" autocomplete="no">
+            </label>
+            <label class="msg-box">
               <p>문의내용</p>
-              <input type="text" placeholder="" autocomplete="no">
-            </div>
-          
-          <input type="button" value="문의하기!" submit="" onclick="popmsg()">  
+              <input name="massage" type="text" placeholder="" autocomplete="no">
+            </label>
+          <button type="submit" value="문의하기!" submit="">문의하기</button>
         </form>
+        
         <div class="popup" onclick="popmsg()">
           <div class="popup-container">
             <div class="close" onclick="popmsg2()">닫기</div>
@@ -295,6 +295,7 @@
       var changeHdr = document.querySelector("#header");
       var navItem = $(".navigation li");
       
+      
 
       // section2 데이터 카운트업 효과
       const countUp1 = new CountUp("number1", 0, 152);
@@ -316,24 +317,27 @@
       scrollEvent.on("click", function(){
         StartCount();
       });
-      window.addEventListener("wheel", e => {
-          e.preventDefault();
-      }, { passive: false }
-      );
-
-        // 페이지 전환 애니메이션   
-      movingHtml.animate({ scrollTop : 0 }, 5);
-
       
-      $(document).keydown(function(event) {
-    if ( event.keyCode == 116 || event.which == 116 ) {
-      page = 1;
+      
+      
+    function Scroll() {
+            window.addEventListener("wheel", e => {
+              e.preventDefault();
+          }, { passive: false }
+          );
         }
-    });
+        movingHtml.animate({ scrollTop : 0 }, 5);
       // if(location.reload()){
       //     page = 0;
       //   }
-      $(window).on("wheel", e => {
+      if($(window).width() > 1200){
+        
+        Scroll();
+
+        // 페이지 전환 애니메이션   
+      
+
+        $(window).on("wheel", e => {
           if (movingHtml.is(":animated")) return;
           if (e.originalEvent.deltaY > 0) {
           if (page == 14) return;
@@ -405,6 +409,23 @@
         var positionTop = (page - 1) * $(window).height();
         movingHtml.animate({ scrollTop: positionTop });
 
+
+        // 키보드 입력 수정 필요
+        $(document).keydown(function(event) {
+        if ( event.keyCode == 116 || event.which == 40 ) {
+          movingHtml.animate({ scrollTop: positionTop });
+          $("body, html").animate({ scrollTop: target.offset().top }, 1000);
+          page++;
+          console.log(page)
+            }
+            if ( event.keyCode == 116 || event.which == 38 ) {
+              movingHtml.animate({ scrollTop: positionTop });
+              $("body, html").animate({ scrollTop: target.offset().top }, 1000);
+          page--;
+          console.log(page)
+            }
+        });
+
         const smoothScroll = (target) =>
           $("body, html").animate({ scrollTop: target.offset().top }, 1000);
 
@@ -414,23 +435,21 @@
           //   $(`.navigation li:nth-child(${page})`).addClass("active");
           // }
           // Nav(page);
+
+          
       });
-
-      const Touch = $(window).on("touchstart", (e)=>{
-        document.getElementById("section1").style.display = "none";
-      })
-      console.log(Touch);
-        // let pages = 1;
-        // navItem.on("click", function(pages){
-          
-        //   navItem.removeClass("active");
-        //   $(this).addClass("active");
-        //   pages++;
-        //   console.log("click" + pages)
-          
-
-        // });
-        
+      }
+      // else {
+      //   window.addEventListener("wheel", e => {
+      //     $(window).unbind(Scroll());
+      //     console.log($(window).width)
+      //   })
+        // window.removeEventListener("wheel", e => {
+        //     e.preventDefault();
+        // }, { passive: true }
+        // );
+      // }
+      
     }
     
   </script>

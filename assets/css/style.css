@@ -487,7 +487,7 @@ span {
     position: absolute;
     top: 15%;
     left: 50%;
-    opacity: 0;
+    opacity: 1;
     transform: translateX(-50%) translateY(100px);
 }
 
@@ -518,7 +518,7 @@ span {
     width: 25vw;
     height: 25vw;
     transform: translateX(-50%) translateY(100px);
-    opacity: 0;
+    opacity: 1;
     margin-top: 10%;
 }
 
@@ -529,7 +529,7 @@ span {
     left: 50%;
     width: 25vw;
     transform: translateX(-50%) translateY(100px);
-    opacity: 0;
+    opacity: 1;
     margin-top: 10%;
 }
 
@@ -541,7 +541,7 @@ span {
     top: 65%;
     left: 50%;
     transform: translateX(-50%) translateY(100px);
-    opacity: 0;
+    opacity: 1;
 }
 #section9 p {
     text-align: center;
@@ -551,7 +551,7 @@ span {
     top: 75%;
     left: 50%;
     transform: translateX(-50%) translateY(100px);
-    opacity: 0;
+    opacity: 1;
 }
 
 /* .sec5-container:nth-child(2) .part-adv .adv-img {
@@ -843,10 +843,11 @@ input[type="text"][half] {
 .msg-box input[type="text"] {
     height: 15vh;
 }
-input[type="button"] {
+button[type="submit"] {
     background: #d09b52;
     color: #eae4da;
     border: 2px solid #d09b52;
+    border-radius: 10px;
     outline: 10px solid #fff;
     width: calc(30% - 30px);
     height: 40px;
@@ -861,7 +862,7 @@ input[type="button"] {
     left: 50%;
     transform: translateX(-50%);
 }
-input[type="submit"]:hover {
+button[type="submit"]:hover {
     outline-width: 100;
 }
 
@@ -1013,9 +1014,39 @@ input[type="text"]:hover {
         background-size: cover;
         background-position: center;
     }
-
+    #section1 {
+        height: 100vh;
+        transform: translateY(-10vh);
+    }
     #section1 .sec1-bg {
         display: none;
+    }
+    #section2 .txt-box {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    #section2 .txt-box h2 {
+        font-size: 8vw;
+    }
+    .data-box h3, .data-box p {
+        font-size: 3vw;
+    }
+
+    #section3 h2 {
+        font-size: 8vw;
+    }
+
+    #section4, #section5, #section6 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .sec4-bg, .sec5-bg, .sec6-bg {
+        height: 0;
     }
 
     #section13 {
