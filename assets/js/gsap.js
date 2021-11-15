@@ -144,25 +144,25 @@ function page8() {
     });
 }
 
-function page9() {
-    let page9 = gsap.timeline();
-    page9.to("#section9 .user", {
-        duration: .4,
-        y: 0,
-        opacity: 1,
-        delay: 1,
-    });
-    page9.to("#section9 img", {
-        duration: .4,
-        y: 0,
-        opacity: 1,
-    });
-    page9.to("#section9 h4, #section9 p", {
-        duration: .4,
-        y: 0,
-        opacity: 1,
-    });
-}
+// function page9() {
+//     let page9 = gsap.timeline();
+//     page9.to("#section9 .user", {
+//         duration: .4,
+//         y: 0,
+//         opacity: 1,
+//         delay: 1,
+//     });
+//     page9.to("#section9 img", {
+//         duration: .4,
+//         y: 0,
+//         opacity: 1,
+//     });
+//     page9.to("#section9 h4, #section9 p", {
+//         duration: .4,
+//         y: 0,
+//         opacity: 1,
+//     });
+// }
 
 function page10() {
     let page10 = gsap.timeline();
