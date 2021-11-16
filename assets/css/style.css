@@ -1059,6 +1059,16 @@ span {
     #section1 .sec1-bg {
         display: none;
     }
+
+    #section1 .txt-box {
+        text-align: center;
+        font-size: 8vw;
+    }
+
+    #section1 .link-box {
+        display: none;
+    }
+
     #section2 .txt-box {
         padding-left: 0;
         text-align: center;
@@ -1073,7 +1083,9 @@ span {
     }
 
     #section3 h2 {
-        font-size: 8vw;
+        font-size: 10vw;
+        width: 100%;
+        transform: translateX(-50%) translateY(0px);
     }
 
     #section4,
@@ -1091,12 +1103,44 @@ span {
     .sec6-bg {
         height: 0;
     }
+    #section7 h2 {
+        font-size: 8vw;
+        width: 100%;
+        transform: translateX(-50%) translateY(0px);
+    }
 
     #section13 {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+    }
+    #section8 #section9 {
+        height: 70vh;
+    }
+    #section8 .user {
+        width: 100%;
+    }
+    
+    #section9 h4, #section9 p {
+        font-size: 3vw;
+    }
+    .partnerShip {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .section .adv-img, .section .jlucy-img {
+        width: 50vw;
+        height: 50vw;
+    }    
+
+    .adv-img2, .jlucy-img2 {
+        top: 30%;
+        width: 40vw;
+        height: 40vh;
     }
 
     #section13 h3,
