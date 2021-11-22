@@ -648,7 +648,7 @@ span {
 
     .partnerShip h3 {
         text-align: center;
-        font-size: 2.2vw;
+        font-size: 2.5vw;
         padding: 20px 0px 20px 0px;
         font-weight: bold;
     }
@@ -1028,6 +1028,10 @@ span {
     .top {
         opacity: 0;
     }
+
+    .mobile-box {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1065,6 +1069,14 @@ span {
         font-size: 8vw;
     }
 
+    #section1 .txt-box p:nth-child(6) {
+        font-size: 3vw;
+    }
+
+    #section1 .txt-box p:nth-child(7) {
+        font-size: 3vw;
+        margin-top: -10px;
+    }
     #section1 .link-box {
         display: none;
     }
@@ -1098,11 +1110,63 @@ span {
         height: 100vh;
     }
 
-    .sec4-bg,
-    .sec5-bg,
-    .sec6-bg {
-        height: 0;
+    .txt-box strong {
+        font-size: 4vw;
     }
+    #section4 .sec4-bg {
+        z-index: -1;
+        width: 60vw;
+        opacity: 0.7;
+        position: absolute;
+    }
+
+    #section5 .sec5-bg {
+        z-index: -1;
+        width: 60vw;
+        opacity: 0.7;
+        position: absolute;
+    }
+
+    #section6 .sec6-bg {
+        z-index: -1;
+        width: 60vw;
+        opacity: 0.5;
+        position: absolute;
+    }
+
+    #section4 .txt-box {
+        width: 55vw;
+        text-align: center;
+    }
+    #section4 .txt-box h2 {
+        font-size: 5vw;
+    }
+    #section4 .txt-box p {
+        font-size: 4vw;
+    }
+
+    #section5 .txt-box {
+        width: 55vw;
+        text-align: center;
+    }
+    #section5 .txt-box h2 {
+        font-size: 5vw;
+    }
+    #section5 .txt-box p {
+        font-size: 4vw;
+    }
+
+    #section6 .txt-box {
+        width: 55vw;
+        text-align: center;
+    }
+    #section6 .txt-box h2 {
+        font-size: 5vw;
+    }
+    #section6 .txt-box p {
+        font-size: 4vw;
+    }
+
     #section7 h2 {
         font-size: 8vw;
         width: 100%;
@@ -1121,15 +1185,54 @@ span {
     #section8 .user {
         width: 100%;
     }
+    .adv-img2,
+    .jlucy-img2 {
+        transform: translateX(-50%) translateY(0px);
+    }
     
+    #section9 {
+        transform: translateY(-10%);
+    }
+
     #section9 h4, #section9 p {
         font-size: 3vw;
+        transform: translateX(-50%) translateY(30px);
     }
     .partnerShip {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        transform: translateY(-5%);
+    }
+
+    .partnerShip1-bg, .partnerShip3-bg{
+        width: 100%;
+        margin: 0;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        /* background: #ccc; */
+    }
+
+    .partnerShip2-bg {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .partnerShip h3 {
+        font-size: 3rem;
+        width: 70vw;
+    }
+
+    .partnerShip p {
+        font-size: 2.5vw;
+        width: 70vw;
+    }
+
+
+    .partnerShip .time {
+        padding-top: 30px;
+        font-size: 2vw;
     }
 
     .section .adv-img, .section .jlucy-img {
@@ -1143,20 +1246,82 @@ span {
         height: 40vh;
     }
 
+    #section13 {
+        background-size: cover;
+    }
+
     #section13 h3,
     #section13 p {
         text-align: center;
     }
 
-    #section13 .contact-container {
-        padding-top: 15%;
+
+    
+    #section13 .contact-container h3 {
+        /* text-align: center; */
+        font-size: 3vw;
+        color: #fff;
+        padding: 0;
+        padding-top: 5vh;
+    }
+    #section13 .contact-container p {
+        /* text-align: center; */
+        padding: 0;
+        color: #fff;
+        line-height: 2;
+    }
+
+    
+    .contact-container img {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 30vw;
     }
 
     #section13 form {
         position: initial;
+        display: none;
     }
+    .mobile-box {
+        position: absolute;
+        top: 50%;
+        height: 40vh;
+        background: #fff;
+        width: 80vw;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .mobile-box h3 {
+        border-bottom: 2px solid #000;
+        padding: 15px;
+    }
+    .mobile-box a {
+        padding: 0;
+        height: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .mobile-box a i {
+        transform: rotate(90deg);
+        font-size: 2rem;
+    }
+
 
     .navigation {
         display: none;
+    }
+
+    
+    .footer-container .footer-logo {
+        width: 25%;
+        background-repeat: no-repeat;
+        margin-top: 80px;
+        cursor: pointer;
     }
 }
