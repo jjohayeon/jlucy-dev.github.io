@@ -266,21 +266,6 @@
           </div>
       </section>
       
-      <!-- <div class="navigation">
-        <li class="active"><a href="#section1"></a></li>
-        <li><a href="#section2"></a></li>
-        <li><a href="#section3"></a></li>
-        <li><a href="#section4"></a></li>
-        <li><a href="#section5"></a></li>
-        <li><a href="#section6"></a></li>
-        <li><a href="#section7"></a></li>
-        <li><a href="#section8"></a></li>
-        <li><a href="#section9"></a></li>
-        <li><a href="#section10"></a></li>
-        <li><a href="#section11"></a></li>
-        <li><a href="#section12"></a></li>
-        <li><a href="#section13"></a></li>
-      </div> -->
       <section id="footer" class="section">
         <div class="footer-container">
           <div class="footer-logo" onclick="window.location.reload(true);"></div>
@@ -410,17 +395,6 @@
           page13();
         }
 
-        // let i = 2;
-        // if (page == i) {
-        //     for(i = 2; i < 13; i++) {
-        //         `page${i}()`;
-        //     }
-        // }
-        // for(let i = 1; i < 13; i++) {
-        //     if (page == i) {
-        //         `page${i}()`;
-        //     }
-        // }
 
         var currentPage = page;
         var positionTop = (page - 1) * $(window).height();
@@ -446,26 +420,9 @@
         const smoothScroll = (target) =>
           $("body, html").animate({ scrollTop: target.offset().top }, 1000);
 
-          // function Nav(page) {
-          //   console.log("nav" + page)
-          //   navItem.removeClass("active");
-          //   $(`.navigation li:nth-child(${page})`).addClass("active");
-          // }
-          // Nav(page);
-
           
       });
       }
-      // else {
-      //   window.addEventListener("wheel", e => {
-      //     $(window).unbind(Scroll());
-      //     console.log($(window).width)
-      //   })
-        // window.removeEventListener("wheel", e => {
-        //     e.preventDefault();
-        // }, { passive: true }
-        // );
-      // }
       
       }
       else {
