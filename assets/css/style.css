@@ -25,10 +25,6 @@
 
 /* header */
 
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
 #wrap {
     position: relative;
 }
@@ -1038,8 +1034,9 @@ span {
 }
 
 @media (max-width: 768px) {
-    main {
-        -webkit-overflow-scrolling: touch;
+    
+    html, body {
+        max-width: 100%;
         overflow-x: hidden;
     }
 
@@ -1321,11 +1318,18 @@ span {
         display: none;
     }
 
+    #footer .footer-container {
+        width: 90%;
+    }
     
     .footer-container .footer-logo {
-        width: 25%;
+        width: 30%;
         background-repeat: no-repeat;
-        margin-top: 80px;
+        margin-top: 75px;
         cursor: pointer;
+    }
+    
+    .footer-container .txt-box {
+        font-size: 2.5vw;
     }
 }
