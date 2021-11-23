@@ -1318,6 +1318,9 @@ span {
     .navigation {
         display: none;
     }
+    .contact-container > img {
+        width: 60vw;
+    }
 
     #footer .footer-container {
         width: 90%;
