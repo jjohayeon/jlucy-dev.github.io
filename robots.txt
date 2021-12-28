@@ -2,4 +2,4 @@ User-agent: *
 
 Allow: /
 
-Sitemap: http://jlucy.co.kr/
+Sitemap: http://jlucy.co.kr/sitemap.xml
