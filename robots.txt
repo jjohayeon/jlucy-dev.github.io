@@ -1,5 +1,3 @@
 User-agent: *
-
 Allow: /
-
 Sitemap: http://jlucy.co.kr/sitemap.xml
