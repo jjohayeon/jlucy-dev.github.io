@@ -14,8 +14,8 @@
     <!-- iphone -->
     <!-- <meta content="yes" name="apple-mobile-web-app-capable" />
 <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" /> -->
-    <link rel="canonical" href="http://jlucy.co.kr" />
-    <link rel="alternate" media="only screen and (max-width: 640px)"  href="http://jlucy.co.kr/m.index.html">
+    <link rel="canonical" href="http://jlucy.co.kr"/>
+    <link rel="alternate" media="only screen and (max-width: 640px)" href="http://jlucy.co.kr/m.index.html">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <title>JLUCY | 제이루시</title>
@@ -307,7 +307,10 @@
 <script src="client.js"></script>
 <script>
     console.log(client)
-    // if (client && client.system )
+    const { android, ios, iphone } = client.system
+    if (android || ios || iphone ) {
+        alert('모바일 접근입니다.')
+    }
 
 </script>
 <script>
