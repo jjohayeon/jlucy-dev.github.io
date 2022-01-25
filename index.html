@@ -306,12 +306,12 @@
 <script src="assets/js/func.js"></script>
 <script src="client.js"></script>
 <script>
-    console.log(client)
-    const { android, ios, iphone } = client.system
-    if (android || ios || iphone ) {
-        alert('모바일 접근입니다.')
+    // console.log(client)
+    const {android, ios, iphone} = client.system
+    if (android || ios || iphone) {
+        console.log('모바일 접근입니다.')
+        // location.href = '/m.index.html'
     }
-
 </script>
 <script>
     window.onload = function () {
