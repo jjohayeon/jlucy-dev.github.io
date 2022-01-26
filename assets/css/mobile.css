@@ -9,15 +9,16 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    padding: 20px;
     background: #fff;
     z-index: 9999;
+    height: 10vh;
 }
 
 header .jlucy_logo {
     text-indent: -9999px;
-    background: url(../img/jlucy-logo.png);
+    background: url("../img/jlucy-logo.png");
     background-repeat: no-repeat;
+    height: 100%;
 }
 
 /* 공통 */
@@ -44,7 +45,6 @@ header .jlucy_logo {
     margin-left: 20px;
 }
 
-
 .section1 .text_box p {
     font-size: 20px;
     font-weight: bold;
@@ -54,14 +54,22 @@ header .jlucy_logo {
 .section1 .img_box .sec1_bg {
     width: 80%;
     float: right;
-    margin-right: 20px;
 }
+
+
+
 
 /* section2 */
 .section2 {
     width: 100%;
     text-align: center;
     background: rgb(108, 108, 255);
+    color: #fff;
+}
+
+.section2 h2 {
+    font-size: 8vw;
+    font-weight: bolder;
 }
 
 .section2 .text_box {
@@ -69,7 +77,7 @@ header .jlucy_logo {
     margin: 20px auto;
 }
 
-.section2 .text_box p img{
+.section2 .text_box p img {
     width: 5%;
     margin-right: 10px;
 }
@@ -138,6 +146,7 @@ header .jlucy_logo {
     position: relative;
     z-index: 5;
 }
+
 /* section7 */
 
 /* section8 */
@@ -150,7 +159,6 @@ header .jlucy_logo {
     align-items: center;
     margin-top: 20px;
     padding-top: 20px;
-    padding-bottom: 20px;
 }
 
 .section8 .container {
@@ -178,4 +186,27 @@ header .jlucy_logo {
 
 .section8 .container.jlucy {
     color: #fff;
+}
+
+
+
+/* footer */
+
+#footer {
+    background: #000;
+    text-align: center;
+    margin-top: -0.75em;
+}
+
+.footer_logo {
+    flex: 0.3;
+    margin: 20px;
+}
+
+.footer_logo img {}
+
+.footer_box {
+    flex: 0.7;
+    color: #ccc;
+    margin-bottom: 30px;
 }
